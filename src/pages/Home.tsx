@@ -14,74 +14,93 @@ const Home = () => {
     {
       image: bioToiletImg,
       title: "Bio Toilets",
-      description: "Eco-friendly portable sanitation solutions for various applications.",
-      features: ["Mobile & Static Options", "Water-saving Technology", "Easy Maintenance"]
+      description:
+        "Eco-friendly portable sanitation solutions for various applications.",
+      features: [
+        "Mobile & Static Options",
+        "Water-saving Technology",
+        "Easy Maintenance",
+      ],
     },
     {
       image: frpCabinImg,
       title: "FRP Cabins",
-      description: "Durable prefabricated structures for office and residential use.",
-      features: ["Weather Resistant", "Quick Installation", "Customizable Design"]
+      description:
+        "Durable prefabricated structures for office and residential use.",
+      features: [
+        "Weather Resistant",
+        "Quick Installation",
+        "Customizable Design",
+      ],
     },
     {
       image: storageTankImg,
       title: "Storage Tanks",
-      description: "High-capacity FRP tanks for water and chemical storage needs.",
-      features: ["Corrosion Resistant", "Long Lasting", "Various Sizes"]
+      description:
+        "High-capacity FRP tanks for water and chemical storage needs.",
+      features: ["Corrosion Resistant", "Long Lasting", "Various Sizes"],
     },
     {
       image: frpBenchImg,
       title: "FRP Benches",
-      description: "Modern outdoor furniture combining comfort with durability.",
-      features: ["Weather Proof", "Low Maintenance", "Ergonomic Design"]
-    }
+      description:
+        "Modern outdoor furniture combining comfort with durability.",
+      features: ["Weather Proof", "Low Maintenance", "Ergonomic Design"],
+    },
   ];
 
   const features = [
     {
       icon: <Award className="w-8 h-8 text-brand-green" />,
       title: "Quality Assured",
-      description: "ISO certified manufacturing with rigorous quality control processes."
+      description:
+        "ISO certified manufacturing with rigorous quality control processes.",
     },
     {
       icon: <Users className="w-8 h-8 text-brand-green" />,
       title: "Expert Team",
-      description: "Experienced engineers and technicians dedicated to excellence."
+      description:
+        "Experienced engineers and technicians dedicated to excellence.",
     },
     {
       icon: <Wrench className="w-8 h-8 text-brand-green" />,
       title: "Custom Solutions",
-      description: "Tailored products to meet your specific requirements and needs."
+      description:
+        "Tailored products to meet your specific requirements and needs.",
     },
     {
       icon: <Leaf className="w-8 h-8 text-brand-green" />,
       title: "Eco-Friendly",
-      description: "Sustainable manufacturing processes and environmentally conscious designs."
-    }
+      description:
+        "Sustainable manufacturing processes and environmentally conscious designs.",
+    },
   ];
 
   const testimonials = [
     {
-      quote: "Econova Engineering delivered exceptional FRP cabins that exceeded our expectations. The quality and durability are outstanding.",
+      quote:
+        "Engineering delivered exceptional FRP cabins that exceeded our expectations. The quality and durability are outstanding.",
       author: "Rajesh Kumar",
-      company: "Construction Solutions Ltd."
+      company: "Construction Solutions Ltd.",
     },
     {
-      quote: "Their bio toilets have been a game-changer for our outdoor events. Reliable, clean, and easy to maintain.",
+      quote:
+        "Their bio toilets have been a game-changer for our outdoor events. Reliable, clean, and easy to maintain.",
       author: "Priya Sharma",
-      company: "Event Management Pro"
+      company: "Event Management Pro",
     },
     {
-      quote: "The storage tanks we purchased have been performing flawlessly for over 3 years. Great investment!",
+      quote:
+        "The storage tanks we purchased have been performing flawlessly for over 3 years. Great investment!",
       author: "Amit Patel",
-      company: "Industrial Works Inc."
-    }
+      company: "Industrial Works Inc.",
+    },
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Hero />
-      
+
       {/* About Section */}
       <section className="py-20 bg-brand-grey/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,26 +109,26 @@ const Home = () => {
               Leading FRP Infrastructure Solutions
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              With years of expertise in FRP manufacturing, Econova Engineering has established itself 
-              as a trusted partner for portable infrastructure solutions across India. Based in Greater Noida, 
-              we combine advanced technology with sustainable practices to deliver products that last.
+              With years of expertise in FRP manufacturing, Econova Engineering
+              has established itself as a trusted partner for portable
+              infrastructure solutions across India. Based in Greater Noida, we
+              combine advanced technology with sustainable practices to deliver
+              products that last.
             </p>
           </div>
 
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center border-brand-grey hover:shadow-lg transition-shadow duration-300">
+              <Card
+                key={index}
+                className="text-center border-brand-grey hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
-                  <div className="flex justify-center mb-4">
-                    {feature.icon}
-                  </div>
+                  <div className="flex justify-center mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-semibold text-brand-grey-dark mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {feature.description}
-                  </p>
+                  <p className="text-muted-foreground">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -125,18 +144,14 @@ const Home = () => {
               Our Product Range
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Discover our comprehensive range of FRP-based infrastructure products 
-              designed for durability and sustainability.
+              Discover our comprehensive range of FRP-based infrastructure
+              products designed for durability and sustainability.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {products.map((product, index) => (
-              <ProductCard
-                key={index}
-                {...product}
-                onLearnMore={() => {}}
-              />
+              <ProductCard key={index} {...product} onLearnMore={() => {}} />
             ))}
           </div>
 
@@ -192,7 +207,8 @@ const Home = () => {
             Ready to Transform Your Infrastructure?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Get in touch with our experts to discuss your requirements and receive a customized quote.
+            Get in touch with our experts to discuss your requirements and
+            receive a customized quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
@@ -202,13 +218,24 @@ const Home = () => {
               </Button>
             </Link>
             <Link to="/products">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-brand-green">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-white text-white hover:bg-white hover:text-brand-green">
                 Browse Products
               </Button>
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-brand-grey-dark text-white py-4 mt-auto">
+        <div className="max-w-7xl mx-auto px-4 text-center text-sm">
+          Design & Developed by{" "}
+          <span className="font-semibold">Aditi Dhariwal</span>
+        </div>
+      </footer>
     </div>
   );
 };

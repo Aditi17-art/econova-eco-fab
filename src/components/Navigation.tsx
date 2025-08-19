@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import logo from "../assets/logo.png";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -12,7 +12,7 @@ const Navigation = () => {
     { name: "About Us", path: "/about" },
     { name: "Products", path: "/products" },
     { name: "Gallery", path: "/gallery" },
-    { name: "Contact", path: "/contact" }
+    { name: "Contact", path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -23,8 +23,12 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">E</span>
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+              <img
+                src={logo}
+                alt="Econova Engineering Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="text-xl font-bold text-brand-grey-dark">
               Econova Engineering
@@ -41,8 +45,7 @@ const Navigation = () => {
                   isActive(item.path)
                     ? "text-brand-green"
                     : "text-brand-grey-dark hover:text-brand-green"
-                }`}
-              >
+                }`}>
                 {item.name}
               </Link>
             ))}
@@ -56,8 +59,7 @@ const Navigation = () => {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
+              onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
           </div>
@@ -76,8 +78,7 @@ const Navigation = () => {
                       ? "text-brand-green"
                       : "text-brand-grey-dark hover:text-brand-green"
                   }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
+                  onClick={() => setIsMenuOpen(false)}>
                   {item.name}
                 </Link>
               ))}

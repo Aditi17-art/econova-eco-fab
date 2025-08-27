@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X, ZoomIn } from "lucide-react";
-import bioToiletImg from "@/assets/bio-toilet.jpg";
+import bioToiletImg from "@/assets/bio-toilet1.jpg";
 import frpCabinImg from "@/assets/frp-cabin.jpg";
 import storageTankImg from "@/assets/storage-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
@@ -20,92 +20,100 @@ const Gallery = () => {
       src: bioToiletImg,
       title: "Bio Toilet Installation",
       category: "Bio Toilets",
-      description: "Modern bio toilet installed at construction site"
+      description: "Modern bio toilet installed at construction site",
     },
     {
       id: 2,
       src: frpCabinImg,
       title: "FRP Security Cabin",
       category: "FRP Cabins",
-      description: "Portable security cabin for industrial use"
+      description: "Portable security cabin for industrial use",
     },
     {
       id: 3,
       src: storageTankImg,
       title: "Industrial Storage Tank",
       category: "Storage Tanks",
-      description: "Large capacity water storage tank"
+      description: "Large capacity water storage tank",
     },
     {
       id: 4,
       src: frpBenchImg,
       title: "Park Bench Installation",
       category: "FRP Benches",
-      description: "Durable outdoor seating solution"
+      description: "Durable outdoor seating solution",
     },
     {
       id: 5,
       src: manufacturingImg,
       title: "Manufacturing Facility",
       category: "Manufacturing",
-      description: "State-of-the-art FRP production line"
+      description: "State-of-the-art FRP production line",
     },
     {
       id: 6,
       src: bioToiletImg,
       title: "Mobile Bio Toilet Unit",
       category: "Bio Toilets",
-      description: "Portable sanitation for events"
+      description: "Portable sanitation for events",
     },
     {
       id: 7,
       src: frpCabinImg,
       title: "Office Cabin Complex",
       category: "FRP Cabins",
-      description: "Modular office solution"
+      description: "Modular office solution",
     },
     {
       id: 8,
       src: storageTankImg,
       title: "Chemical Storage System",
       category: "Storage Tanks",
-      description: "Corrosion-resistant storage solution"
+      description: "Corrosion-resistant storage solution",
     },
     {
       id: 9,
       src: frpBenchImg,
       title: "Bus Stop Seating",
       category: "FRP Benches",
-      description: "Weather-resistant public seating"
+      description: "Weather-resistant public seating",
     },
     {
       id: 10,
       src: manufacturingImg,
       title: "Quality Control Lab",
       category: "Manufacturing",
-      description: "Advanced testing and quality assurance"
+      description: "Advanced testing and quality assurance",
     },
     {
       id: 11,
       src: bioToiletImg,
       title: "Rural Area Installation",
       category: "Bio Toilets",
-      description: "Sanitation solution for remote locations"
+      description: "Sanitation solution for remote locations",
     },
     {
       id: 12,
       src: frpCabinImg,
       title: "Emergency Shelter",
       category: "FRP Cabins",
-      description: "Rapid deployment emergency housing"
-    }
+      description: "Rapid deployment emergency housing",
+    },
   ];
 
-  const categories = ["All", "Bio Toilets", "FRP Cabins", "Storage Tanks", "FRP Benches", "Manufacturing"];
+  const categories = [
+    "All",
+    "Bio Toilets",
+    "FRP Cabins",
+    "Storage Tanks",
+    "FRP Benches",
+    "Manufacturing",
+  ];
 
-  const filteredImages = selectedCategory === "All" 
-    ? galleryImages 
-    : galleryImages.filter(image => image.category === selectedCategory);
+  const filteredImages =
+    selectedCategory === "All"
+      ? galleryImages
+      : galleryImages.filter((image) => image.category === selectedCategory);
 
   return (
     <div className="min-h-screen pt-16">
@@ -117,7 +125,8 @@ const Gallery = () => {
               Project Gallery
             </h1>
             <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto leading-relaxed">
-              Explore our completed projects and see the quality of our FRP-based infrastructure solutions in action.
+              Explore our completed projects and see the quality of our
+              FRP-based infrastructure solutions in action.
             </p>
           </div>
         </div>
@@ -132,8 +141,7 @@ const Gallery = () => {
                 key={category}
                 variant={selectedCategory === category ? "cta" : "outline"}
                 onClick={() => setSelectedCategory(category)}
-                className="min-w-24"
-              >
+                className="min-w-24">
                 {category}
               </Button>
             ))}
@@ -146,11 +154,10 @@ const Gallery = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredImages.map((image) => (
-              <Card 
-                key={image.id} 
+              <Card
+                key={image.id}
                 className="group cursor-pointer overflow-hidden border-brand-grey hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
-                onClick={() => setSelectedImage(image)}
-              >
+                onClick={() => setSelectedImage(image)}>
                 <div className="relative">
                   <img
                     src={image.src}
@@ -167,7 +174,9 @@ const Gallery = () => {
                     <ZoomIn className="w-8 h-8 text-white" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="font-semibold text-lg mb-1">{image.title}</h3>
+                    <h3 className="font-semibold text-lg mb-1">
+                      {image.title}
+                    </h3>
                     <p className="text-sm opacity-90">{image.description}</p>
                   </div>
                 </div>
@@ -178,7 +187,9 @@ const Gallery = () => {
       </section>
 
       {/* Image Modal */}
-      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+      <Dialog
+        open={!!selectedImage}
+        onOpenChange={() => setSelectedImage(null)}>
         <DialogContent className="max-w-4xl max-h-[90vh] p-0">
           {selectedImage && (
             <div className="relative">
@@ -186,8 +197,7 @@ const Gallery = () => {
                 variant="ghost"
                 size="icon"
                 className="absolute top-4 right-4 z-10 bg-black/50 text-white hover:bg-black/70"
-                onClick={() => setSelectedImage(null)}
-              >
+                onClick={() => setSelectedImage(null)}>
                 <X className="w-4 h-4" />
               </Button>
               <img
@@ -221,8 +231,9 @@ const Gallery = () => {
               Our Manufacturing Excellence
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Take a look behind the scenes at our state-of-the-art manufacturing facility 
-              where quality and precision meet innovation.
+              Take a look behind the scenes at our state-of-the-art
+              manufacturing facility where quality and precision meet
+              innovation.
             </p>
           </div>
 
@@ -233,7 +244,8 @@ const Gallery = () => {
                   Advanced Equipment
                 </h3>
                 <p className="text-muted-foreground">
-                  Modern machinery and tools ensure precision manufacturing and consistent quality in every product.
+                  Modern machinery and tools ensure precision manufacturing and
+                  consistent quality in every product.
                 </p>
               </div>
             </Card>
@@ -243,7 +255,8 @@ const Gallery = () => {
                   Quality Control
                 </h3>
                 <p className="text-muted-foreground">
-                  Rigorous testing and inspection processes guarantee that every product meets our high standards.
+                  Rigorous testing and inspection processes guarantee that every
+                  product meets our high standards.
                 </p>
               </div>
             </Card>
@@ -253,7 +266,8 @@ const Gallery = () => {
                   Skilled Workforce
                 </h3>
                 <p className="text-muted-foreground">
-                  Our experienced team of engineers and technicians bring expertise to every project.
+                  Our experienced team of engineers and technicians bring
+                  expertise to every project.
                 </p>
               </div>
             </Card>
@@ -268,13 +282,17 @@ const Gallery = () => {
             Ready to Start Your Project?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Contact us today to discuss your requirements and see how we can bring your vision to life.
+            Contact us today to discuss your requirements and see how we can
+            bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="secondary" size="lg">
               Request Quote
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-brand-green">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-white text-white hover:bg-white hover:text-brand-green">
               View Products
             </Button>
           </div>

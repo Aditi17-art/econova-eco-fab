@@ -3,10 +3,16 @@ import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import bioToiletImg from "@/assets/bio-toilet.jpg";
+import bioToiletImg from "@/assets/bio-toilet1.jpg";
 import frpCabinImg from "@/assets/frp-cabin.jpg";
 import storageTankImg from "@/assets/storage-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
@@ -20,129 +26,152 @@ const Products = () => {
       image: bioToiletImg,
       title: "Bio Toilets",
       category: "Sanitation",
-      description: "Advanced eco-friendly portable sanitation solutions designed for various environments and applications.",
-      shortFeatures: ["Mobile & Static Options", "Water-saving Technology", "Easy Maintenance"],
-      fullDescription: "Our Bio Toilets represent the pinnacle of portable sanitation technology, featuring advanced waste treatment systems that are both environmentally friendly and highly efficient. These units are perfect for construction sites, events, parks, and remote locations.",
+      description:
+        "Advanced eco-friendly portable sanitation solutions designed for various environments and applications.",
+      shortFeatures: [
+        "Mobile & Static Options",
+        "Water-saving Technology",
+        "Easy Maintenance",
+      ],
+      fullDescription:
+        "Our Bio Toilets represent the pinnacle of portable sanitation technology, featuring advanced waste treatment systems that are both environmentally friendly and highly efficient. These units are perfect for construction sites, events, parks, and remote locations.",
       specifications: [
         "Capacity: 1-10 users per day",
         "Material: High-grade FRP",
         "Dimensions: Customizable",
         "Weight: 50-150 kg",
-        "Installation: Portable/Fixed"
+        "Installation: Portable/Fixed",
       ],
       useCases: [
         "Construction Sites",
         "Public Parks",
         "Events & Festivals",
         "Rural Areas",
-        "Emergency Relief"
+        "Emergency Relief",
       ],
       customizations: [
         "Size variations",
         "Color options",
         "Accessibility features",
         "Solar power integration",
-        "Hand wash stations"
-      ]
+        "Hand wash stations",
+      ],
     },
     {
       id: 2,
       image: frpCabinImg,
       title: "FRP Cabins",
       category: "Structures",
-      description: "Durable prefabricated structures suitable for office spaces, residential units, and specialized applications.",
-      shortFeatures: ["Weather Resistant", "Quick Installation", "Customizable Design"],
-      fullDescription: "Our FRP Cabins are engineered for durability and versatility, offering quick deployment solutions for temporary or permanent structures. Built with high-quality FRP materials, these cabins provide excellent insulation and weather resistance.",
+      description:
+        "Durable prefabricated structures suitable for office spaces, residential units, and specialized applications.",
+      shortFeatures: [
+        "Weather Resistant",
+        "Quick Installation",
+        "Customizable Design",
+      ],
+      fullDescription:
+        "Our FRP Cabins are engineered for durability and versatility, offering quick deployment solutions for temporary or permanent structures. Built with high-quality FRP materials, these cabins provide excellent insulation and weather resistance.",
       specifications: [
         "Size: 8x8 ft to 20x40 ft",
         "Height: 8-12 ft",
         "Wall Thickness: 4-6 inches",
         "Load Capacity: Up to 500 kg/m²",
-        "Assembly Time: 2-4 hours"
+        "Assembly Time: 2-4 hours",
       ],
       useCases: [
         "Site Offices",
         "Security Cabins",
         "Residential Units",
         "Storage Facilities",
-        "Emergency Shelters"
+        "Emergency Shelters",
       ],
       customizations: [
         "Internal partitions",
         "Electrical fittings",
         "Plumbing ready",
         "HVAC provisions",
-        "Custom layouts"
-      ]
+        "Custom layouts",
+      ],
     },
     {
       id: 3,
       image: storageTankImg,
       title: "Storage Tanks",
       category: "Storage",
-      description: "High-capacity FRP tanks designed for water storage, chemical storage, and various industrial applications.",
+      description:
+        "High-capacity FRP tanks designed for water storage, chemical storage, and various industrial applications.",
       shortFeatures: ["Corrosion Resistant", "Long Lasting", "Various Sizes"],
-      fullDescription: "Our Storage Tanks are manufactured using premium FRP materials that offer superior resistance to corrosion, chemicals, and weather conditions. These tanks are ideal for both residential and industrial applications.",
+      fullDescription:
+        "Our Storage Tanks are manufactured using premium FRP materials that offer superior resistance to corrosion, chemicals, and weather conditions. These tanks are ideal for both residential and industrial applications.",
       specifications: [
         "Capacity: 500L to 50,000L",
         "Material: Food-grade FRP",
         "Shape: Cylindrical/Rectangular",
         "Pressure Rating: Up to 10 bar",
-        "Temperature Range: -20°C to 80°C"
+        "Temperature Range: -20°C to 80°C",
       ],
       useCases: [
         "Water Storage",
         "Chemical Storage",
         "Wastewater Treatment",
         "Industrial Processes",
-        "Agricultural Applications"
+        "Agricultural Applications",
       ],
       customizations: [
         "Capacity variations",
         "Inlet/outlet configurations",
         "Level indicators",
         "Heating elements",
-        "Special coatings"
-      ]
+        "Special coatings",
+      ],
     },
     {
       id: 4,
       image: frpBenchImg,
       title: "FRP Benches",
       category: "Furniture",
-      description: "Modern outdoor furniture that combines aesthetic appeal with exceptional durability and comfort.",
+      description:
+        "Modern outdoor furniture that combines aesthetic appeal with exceptional durability and comfort.",
       shortFeatures: ["Weather Proof", "Low Maintenance", "Ergonomic Design"],
-      fullDescription: "Our FRP Benches are designed to withstand harsh outdoor conditions while providing comfortable seating solutions. These benches require minimal maintenance and retain their appearance for years.",
+      fullDescription:
+        "Our FRP Benches are designed to withstand harsh outdoor conditions while providing comfortable seating solutions. These benches require minimal maintenance and retain their appearance for years.",
       specifications: [
         "Length: 4-8 ft",
         "Seating Capacity: 2-4 persons",
         "Weight: 25-45 kg",
         "Load Capacity: 300 kg",
-        "Material Thickness: 8-12 mm"
+        "Material Thickness: 8-12 mm",
       ],
       useCases: [
         "Public Parks",
         "Bus Stops",
         "Shopping Centers",
         "Educational Institutions",
-        "Residential Complexes"
+        "Residential Complexes",
       ],
       customizations: [
         "Length variations",
         "Color options",
         "Backrest designs",
         "Armrest configurations",
-        "Anti-vandal features"
-      ]
-    }
+        "Anti-vandal features",
+      ],
+    },
   ];
 
-  const categories = ["All", "Sanitation", "Structures", "Storage", "Furniture"];
+  const categories = [
+    "All",
+    "Sanitation",
+    "Structures",
+    "Storage",
+    "Furniture",
+  ];
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const filteredProducts = selectedCategory === "All" 
-    ? products 
-    : products.filter(product => product.category === selectedCategory);
+  const filteredProducts =
+    selectedCategory === "All"
+      ? products
+      : products.filter((product) => product.category === selectedCategory);
 
   return (
     <div className="min-h-screen pt-16">
@@ -154,8 +183,8 @@ const Products = () => {
               Our Product Range
             </h1>
             <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto leading-relaxed">
-              Discover our comprehensive collection of FRP-based infrastructure products 
-              designed for durability, sustainability, and performance.
+              Discover our comprehensive collection of FRP-based infrastructure
+              products designed for durability, sustainability, and performance.
             </p>
           </div>
         </div>
@@ -170,8 +199,7 @@ const Products = () => {
                 key={category}
                 variant={selectedCategory === category ? "cta" : "outline"}
                 onClick={() => setSelectedCategory(category)}
-                className="min-w-24"
-              >
+                className="min-w-24">
                 {category}
               </Button>
             ))}
@@ -202,7 +230,9 @@ const Products = () => {
       </section>
 
       {/* Product Detail Modal */}
-      <Dialog open={!!selectedProduct} onOpenChange={() => setSelectedProduct(null)}>
+      <Dialog
+        open={!!selectedProduct}
+        onOpenChange={() => setSelectedProduct(null)}>
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           {selectedProduct && (
             <>
@@ -211,7 +241,7 @@ const Products = () => {
                   {selectedProduct.title}
                 </DialogTitle>
               </DialogHeader>
-              
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div>
                   <img
@@ -232,7 +262,9 @@ const Products = () => {
                     </h3>
                     <ul className="space-y-2">
                       {selectedProduct.specifications.map((spec, index) => (
-                        <li key={index} className="text-sm text-muted-foreground flex items-center">
+                        <li
+                          key={index}
+                          className="text-sm text-muted-foreground flex items-center">
                           <CheckCircle className="w-4 h-4 text-brand-green mr-2 flex-shrink-0" />
                           {spec}
                         </li>
@@ -247,7 +279,10 @@ const Products = () => {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                       {selectedProduct.useCases.map((useCase, index) => (
-                        <Badge key={index} variant="secondary" className="text-xs">
+                        <Badge
+                          key={index}
+                          variant="secondary"
+                          className="text-xs">
                           {useCase}
                         </Badge>
                       ))}
@@ -261,7 +296,9 @@ const Products = () => {
                     </h3>
                     <ul className="space-y-2">
                       {selectedProduct.customizations.map((custom, index) => (
-                        <li key={index} className="text-sm text-muted-foreground flex items-center">
+                        <li
+                          key={index}
+                          className="text-sm text-muted-foreground flex items-center">
                           <div className="w-2 h-2 bg-brand-green rounded-full mr-3 flex-shrink-0" />
                           {custom}
                         </li>
@@ -291,7 +328,8 @@ const Products = () => {
             Need a Custom Solution?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Our engineering team can design and manufacture products tailored to your specific requirements.
+            Our engineering team can design and manufacture products tailored to
+            your specific requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
@@ -301,7 +339,10 @@ const Products = () => {
               </Button>
             </Link>
             <Link to="/gallery">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-brand-green">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-white text-white hover:bg-white hover:text-brand-green">
                 View Gallery
               </Button>
             </Link>

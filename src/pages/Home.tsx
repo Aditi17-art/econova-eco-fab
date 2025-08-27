@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Award, Users, Wrench, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
-import bioToiletImg from "@/assets/bio-toilet.jpg";
+import bioToiletImg from "@/assets/bio-toilet1.jpg";
 import frpCabinImg from "@/assets/frp-cabin.jpg";
 import storageTankImg from "@/assets/storage-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";

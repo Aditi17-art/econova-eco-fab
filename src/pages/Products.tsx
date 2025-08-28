@@ -257,7 +257,7 @@ const Products = () => {
                 <ProductCard
                   image={product.image}
                   title={product.title}
-                  onLearnMore={() => setSelectedProduct(product)}
+                  onViewMore={() => setSelectedProduct(product)}
                 />
               </div>
             ))}

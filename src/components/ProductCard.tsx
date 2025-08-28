@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 interface ProductCardProps {
   image: string;
   title: string;
-  onLearnMore: () => void;
+  onViewMore: () => void;
 }
 
-const ProductCard = ({ image, title, onLearnMore }: ProductCardProps) => {
+const ProductCard = ({ image, title, onViewMore }: ProductCardProps) => {
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-brand-grey">
       <div className="relative overflow-hidden rounded-t-lg">
@@ -21,8 +21,8 @@ const ProductCard = ({ image, title, onLearnMore }: ProductCardProps) => {
       <CardContent className="p-6">
         <h3 className="text-xl font-bold text-brand-grey-dark mb-3">{title}</h3>
 
-        <Button variant="cta-outline" className="w-full" onClick={onLearnMore}>
-          Learn More
+        <Button variant="cta-outline" className="w-full" onClick={onViewMore}>
+          View More
         </Button>
       </CardContent>
     </Card>

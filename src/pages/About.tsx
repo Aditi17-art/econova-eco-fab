@@ -9,30 +9,34 @@ const About = () => {
     {
       icon: <Award className="w-8 h-8 text-brand-green" />,
       title: "Quality Excellence",
-      description: "We maintain the highest standards in manufacturing and quality control to ensure superior products."
+      description:
+        "We maintain the highest standards in manufacturing and quality control to ensure superior products.",
     },
     {
       icon: <Users className="w-8 h-8 text-brand-green" />,
       title: "Customer First",
-      description: "Our customers' success is our priority. We provide tailored solutions and exceptional service."
+      description:
+        "Our customers' success is our priority. We provide tailored solutions and exceptional service.",
     },
     {
       icon: <Factory className="w-8 h-8 text-brand-green" />,
       title: "Innovation",
-      description: "Continuous innovation in FRP technology and manufacturing processes drives our growth."
+      description:
+        "Continuous innovation in FRP technology and manufacturing processes drives our growth.",
     },
     {
       icon: <Wrench className="w-8 h-8 text-brand-green" />,
       title: "Reliability",
-      description: "Dependable products and services that our customers can trust for their critical infrastructure needs."
-    }
+      description:
+        "Dependable products and services that our customers can trust for their critical infrastructure needs.",
+    },
   ];
 
   const stats = [
     { number: "500+", label: "Projects Completed" },
     { number: "15+", label: "Years Experience" },
     { number: "200+", label: "Happy Clients" },
-    { number: "50+", label: "Expert Team Members" }
+    { number: "50+", label: "Expert Team Members" },
   ];
 
   return (
@@ -45,8 +49,8 @@ const About = () => {
               About Econova Engineering
             </h1>
             <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto leading-relaxed">
-              Pioneering sustainable infrastructure solutions through innovative FRP technology 
-              and uncompromising quality standards.
+              Pioneering sustainable infrastructure solutions through innovative
+              FRP technology and uncompromising quality standards.
             </p>
           </div>
         </div>
@@ -61,15 +65,18 @@ const About = () => {
                 Building the Future of Infrastructure
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Founded with a vision to revolutionize portable infrastructure, Econova Engineering 
-                has grown from a small manufacturing unit to one of India's leading FRP product manufacturers. 
-                Based in Greater Noida, we serve clients across the nation with our comprehensive range 
-                of durable and eco-friendly solutions.
+                Founded with a vision to revolutionize portable infrastructure,
+                Econova Engineering has grown from a small manufacturing unit to
+                one of India's leading FRP product manufacturers. Based in
+                Greater Noida, we serve clients across the nation with our
+                comprehensive range of durable and eco-friendly solutions.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Our commitment to quality, innovation, and sustainability has earned us the trust of 
-                hundreds of clients across various industries. From bio toilets for smart cities to 
-                storage tanks for industrial applications, we deliver solutions that stand the test of time.
+                Our commitment to quality, innovation, and sustainability has
+                earned us the trust of hundreds of clients across various
+                industries. From bio toilets for smart cities to storage tanks
+                for industrial applications, we deliver solutions that stand the
+                test of time.
               </p>
               <Link to="/contact">
                 <Button variant="cta" size="lg">
@@ -97,12 +104,15 @@ const About = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Target className="w-10 h-10 text-brand-green mr-4" />
-                  <h3 className="text-2xl font-bold text-brand-grey-dark">Our Mission</h3>
+                  <h3 className="text-2xl font-bold text-brand-grey-dark">
+                    Our Mission
+                  </h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  To provide innovative, sustainable, and high-quality FRP-based infrastructure 
-                  solutions that meet the evolving needs of our customers while contributing to 
-                  environmental conservation and social development.
+                  To provide innovative, sustainable, and high-quality FRP-based
+                  infrastructure solutions that meet the evolving needs of our
+                  customers while contributing to environmental conservation and
+                  social development.
                 </p>
               </CardContent>
             </Card>
@@ -111,12 +121,15 @@ const About = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Eye className="w-10 h-10 text-brand-green mr-4" />
-                  <h3 className="text-2xl font-bold text-brand-grey-dark">Our Vision</h3>
+                  <h3 className="text-2xl font-bold text-brand-grey-dark">
+                    Our Vision
+                  </h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  To become the leading manufacturer of FRP infrastructure products in India, 
-                  recognized for our innovation, quality excellence, and commitment to sustainable 
-                  development practices.
+                  To become the leading manufacturer of FRP infrastructure
+                  products in India, recognized for our innovation, quality
+                  excellence, and commitment to sustainable development
+                  practices.
                 </p>
               </CardContent>
             </Card>
@@ -132,17 +145,18 @@ const About = () => {
               Our Core Values
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide our operations and define our commitment to excellence.
+              The principles that guide our operations and define our commitment
+              to excellence.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="text-center border-brand-grey hover:shadow-lg transition-shadow duration-300">
+              <Card
+                key={index}
+                className="text-center border-brand-grey hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
-                  <div className="flex justify-center mb-4">
-                    {value.icon}
-                  </div>
+                  <div className="flex justify-center mb-4">{value.icon}</div>
                   <h3 className="text-xl font-semibold text-brand-grey-dark mb-3">
                     {value.title}
                   </h3>
@@ -164,7 +178,8 @@ const About = () => {
               Our Achievement in Numbers
             </h2>
             <p className="text-xl opacity-90">
-              Years of dedication and hard work reflected in our success metrics.
+              Years of dedication and hard work reflected in our success
+              metrics.
             </p>
           </div>
 
@@ -174,9 +189,7 @@ const About = () => {
                 <div className="text-4xl md:text-5xl font-bold mb-2">
                   {stat.number}
                 </div>
-                <div className="text-lg opacity-90">
-                  {stat.label}
-                </div>
+                <div className="text-lg opacity-90">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -190,7 +203,8 @@ const About = () => {
             Partner with Econova Engineering
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Ready to discuss your infrastructure needs? Let's build something great together.
+            Ready to discuss your infrastructure needs? Let's build something
+            great together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/products">
@@ -206,6 +220,13 @@ const About = () => {
           </div>
         </div>
       </section>
+      {/* Footer */}
+      <footer className="bg-brand-grey-dark text-white py-4 mt-auto">
+        <div className="max-w-7xl mx-auto px-4 text-center text-sm">
+          Design & Developed by{" "}
+          <span className="font-semibold">Aditi Dhariwal</span>
+        </div>
+      </footer>
     </div>
   );
 };

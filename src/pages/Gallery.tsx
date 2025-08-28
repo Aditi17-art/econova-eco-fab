@@ -6,7 +6,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X, ZoomIn } from "lucide-react";
 import bioToiletImg from "@/assets/bio-toilet1.jpg";
 import frpCabinImg from "@/assets/frp-cabin1.jpeg";
-import storageTankImg from "@/assets/storage-tank.jpg";
+import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
 import manufacturingImg from "@/assets/manufacturing.jpg";
 

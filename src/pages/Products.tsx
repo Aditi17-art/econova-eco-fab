@@ -16,6 +16,7 @@ import bioToiletImg from "@/assets/bio-toilet1.jpg";
 import frpCabinImg from "@/assets/frp-cabin.jpeg";
 import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
+import frpMTV from "@/assets/MTV.jpg";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -155,6 +156,43 @@ const Products = () => {
         "Backrest designs",
         "Armrest configurations",
         "Anti-vandal features",
+      ],
+    },
+
+    {
+      id: 5,
+      image: frpMTV,
+      title: "FRP Mobile Toilet Vans",
+      category: "Sanitation",
+      description:
+        "Fully equipped FRP Mobile Toilet Vans designed for large gatherings, events, and on-the-go sanitation needs.",
+      shortFeatures: [
+        "Portable & Mobile",
+        "Multiple Cabins",
+        "Hygienic & Durable",
+      ],
+      fullDescription:
+        "Our FRP Mobile Toilet Vans are the ultimate solution for mobile sanitation. Built on sturdy FRP structures, they feature multiple cabins with advanced waste management systems, ensuring hygiene and convenience at outdoor events, highways, and temporary sites.",
+      specifications: [
+        "Cabins: 2-8 units",
+        "Material: Premium FRP body",
+        "Vehicle Chassis: Compatible with multiple bases",
+        "Dimensions: Customizable",
+        "Waste Disposal: Advanced treatment system",
+      ],
+      useCases: [
+        "Large Events",
+        "Highways",
+        "Railway Stations",
+        "Construction Sites",
+        "Emergency Camps",
+      ],
+      customizations: [
+        "Cabin count",
+        "Internal fittings",
+        "Color options",
+        "Separate male/female units",
+        "Water storage integration",
       ],
     },
   ];

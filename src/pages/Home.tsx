@@ -8,6 +8,7 @@ import bioToiletImg from "@/assets/bio-toilet1.jpg";
 import frpCabinImg from "@/assets/frp-cabin.jpeg";
 import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
+import frpMTV from "@/assets/MTV.jpg";
 
 const Home = () => {
   const products = [
@@ -46,6 +47,13 @@ const Home = () => {
       description:
         "Modern outdoor furniture combining comfort with durability.",
       features: ["Weather Proof", "Low Maintenance", "Ergonomic Design"],
+    },
+    {
+      image: frpMTV,
+      title: "FRP Mobile Toilet Vans",
+      description:
+        "Fully equipped mobile sanitation vans ideal for events, highways, and emergency camps.",
+      features: ["Portable & Mobile", "Multiple Cabins", "Hygienic & Durable"],
     },
   ];
 

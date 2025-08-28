@@ -9,6 +9,8 @@ import frpCabinImg from "@/assets/frp-cabin.jpeg";
 import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
 import manufacturingImg from "@/assets/manufacturing.jpg";
+import frpMTV from "@/assets/MTV.jpg";
+import { Description } from "@radix-ui/react-toast";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -52,52 +54,10 @@ const Gallery = () => {
     },
     {
       id: 6,
-      src: bioToiletImg,
-      title: "Mobile Bio Toilet Unit",
-      category: "Bio Toilets",
-      description: "Portable sanitation for events",
-    },
-    {
-      id: 7,
-      src: frpCabinImg,
-      title: "Office Cabin Complex",
-      category: "FRP Cabins",
-      description: "Modular office solution",
-    },
-    {
-      id: 8,
-      src: storageTankImg,
-      title: "Chemical Storage System",
-      category: "Storage Tanks",
-      description: "Corrosion-resistant storage solution",
-    },
-    {
-      id: 9,
-      src: frpBenchImg,
-      title: "Bus Stop Seating",
-      category: "FRP Benches",
-      description: "Weather-resistant public seating",
-    },
-    {
-      id: 10,
-      src: manufacturingImg,
-      title: "Quality Control Lab",
-      category: "Manufacturing",
-      description: "Advanced testing and quality assurance",
-    },
-    {
-      id: 11,
-      src: bioToiletImg,
-      title: "Rural Area Installation",
-      category: "Bio Toilets",
-      description: "Sanitation solution for remote locations",
-    },
-    {
-      id: 12,
-      src: frpCabinImg,
-      title: "Emergency Shelter",
-      category: "FRP Cabins",
-      description: "Rapid deployment emergency housing",
+      src: frpMTV,
+      title: "Mobile Toilet Van",
+      category: "FRP -MBT",
+      description: "Modern bio toilet installed at construction site",
     },
   ];
 
@@ -107,6 +67,7 @@ const Gallery = () => {
     "FRP Cabins",
     "Storage Tanks",
     "FRP Benches",
+    "FRP-MBT",
     "Manufacturing",
   ];
 

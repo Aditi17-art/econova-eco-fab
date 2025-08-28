@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Award, Users, Wrench, Leaf } from "lucide-react";
@@ -11,11 +12,26 @@ import frpMTV from "@/assets/MTV.jpeg";
 
 const Home = () => {
   const products = [
-    { image: bioToiletImg, title: "Bio Toilets" },
-    { image: frpCabinImg, title: "FRP Cabins" },
-    { image: storageTankImg, title: "Bio-Digester Tanks" },
-    { image: frpBenchImg, title: "FRP Benches" },
-    { image: frpMTV, title: "FRP Mobile Toilet Vans" },
+    {
+      image: bioToiletImg,
+      title: "Bio Toilets",
+    },
+    {
+      image: frpCabinImg,
+      title: "FRP Cabins",
+    },
+    {
+      image: storageTankImg,
+      title: "Bio-Digester Tanks",
+    },
+    {
+      image: frpBenchImg,
+      title: "FRP Benches",
+    },
+    {
+      image: frpMTV,
+      title: "FRP Mobile Toilet Vans",
+    },
   ];
 
   const features = [
@@ -118,23 +134,9 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Only Image + Title */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {products.map((product, index) => (
-              <Card
-                key={index}
-                className="border-brand-grey hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-4 flex flex-col items-center">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="rounded-lg mb-4 w-full h-48 object-cover"
-                  />
-                  <h3 className="text-lg font-semibold text-brand-grey-dark text-center">
-                    {product.title}
-                  </h3>
-                </CardContent>
-              </Card>
+              <ProductCard key={index} {...product} onLearnMore={() => {}} />
             ))}
           </div>
 

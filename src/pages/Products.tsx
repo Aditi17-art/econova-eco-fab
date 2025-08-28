@@ -387,6 +387,13 @@ const Products = () => {
           </div>
         </div>
       </section>
+      {/* Footer */}
+      <footer className="bg-brand-grey-dark text-white py-4 mt-auto">
+        <div className="max-w-7xl mx-auto px-4 text-center text-sm">
+          Design & Developed by{" "}
+          <span className="font-semibold">Aditi Dhariwal</span>
+        </div>
+      </footer>
     </div>
   );
 };

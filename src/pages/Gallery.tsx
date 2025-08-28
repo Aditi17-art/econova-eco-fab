@@ -36,7 +36,7 @@ const Gallery = () => {
       src: storageTankImg,
       title: "Industrial Storage Tank",
       category: "Storage Tanks",
-      description: "Large capacity water storage tank",
+      description: "Large capacity  storage tank",
     },
     {
       id: 4,

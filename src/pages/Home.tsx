@@ -36,9 +36,9 @@ const Home = () => {
     },
     {
       image: storageTankImg,
-      title: "Storage Tanks",
+      title: "Bio-Digester Tanks",
       description:
-        "High-capacity FRP tanks for water and chemical storage needs.",
+        "Eco-friendly tanks that treat human waste using anaerobic digestion, ensuring hygienic and sustainable waste management.",
       features: ["Corrosion Resistant", "Long Lasting", "Various Sizes"],
     },
     {

@@ -5,10 +5,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Award, Users, Wrench, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
 import bioToiletImg from "@/assets/bio-toilet1.jpg";
-import frpCabinImg from "@/assets/frp-cabin.jpeg";
+import frpCabinImg from "@/assets/frp-cabin.jpg";
 import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
-import frpMTV from "@/assets/MTV.jpg";
+import frpMTV from "@/assets/MTV.jpeg";
 
 const Home = () => {
   const products = [

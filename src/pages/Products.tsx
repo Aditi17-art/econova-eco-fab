@@ -17,6 +17,7 @@ import frpCabinImg from "@/assets/frp-cabin.jpg";
 import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
 import frpMTV from "@/assets/MTV.jpeg";
+import frpOC from "@/assets/Office-Container.jpg";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -193,6 +194,42 @@ const Products = () => {
         "Color options",
         "Separate male/female units",
         "Water storage integration",
+      ],
+    },
+    {
+      id: 6,
+      image: frpOC,
+      title: "FRP Office Container",
+      category: "Workplace Solutions",
+      description:
+        "Portable FRP office container designed for on-site workspaces and project offices.",
+      shortFeatures: [
+        "Portable & Durable",
+        "Weather Resistant",
+        "Low Maintenance",
+      ],
+      fullDescription:
+        "Our FRP Office Containers are ideal for creating instant and reliable workspaces at construction sites, industrial    areas, and remote locations. Built with premium FRP panels, these containers offer excellent insulation, durability, and comfort, making them a cost-effective and long-lasting alternative to traditional site offices.",
+      specifications: [
+        "Material: High-quality FRP panels",
+        "Structure: Rigid & rust-proof body",
+        "Dimensions: Customizable sizes",
+        "Flooring: Anti-slip & durable surface",
+        "Insulation: Heat and sound resistant",
+      ],
+      useCases: [
+        "Construction Site Offices",
+        "Industrial Workstations",
+        "Project Management Units",
+        "Remote Area Workspaces",
+        "Temporary Corporate Offices",
+      ],
+      customizations: [
+        "Size & layout",
+        "Internal partitions",
+        "Electrical fittings",
+        "Air conditioning & ventilation",
+        "Exterior color & branding",
       ],
     },
   ];

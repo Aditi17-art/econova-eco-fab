@@ -10,6 +10,7 @@ import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
 import manufacturingImg from "@/assets/manufacturing.jpg";
 import frpMTV from "@/assets/MTV.jpeg";
+import frpOC from "@/assets/Office-Container.jpg";
 import { Description } from "@radix-ui/react-toast";
 
 const Gallery = () => {
@@ -58,6 +59,13 @@ const Gallery = () => {
       title: "Mobile Toilet Van",
       category: "FRP -MBT",
       description: "Modern bio toilet installed at construction site",
+    },
+    {
+      id: 6,
+      src: frpOC,
+      title: "Office Container",
+      category: "FRP-Office-Container",
+      description: "Durable FRP office container for site use",
     },
   ];
 

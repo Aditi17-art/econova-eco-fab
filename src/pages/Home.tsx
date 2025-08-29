@@ -9,6 +9,7 @@ import frpCabinImg from "@/assets/frp-cabin.jpg";
 import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
 import frpMTV from "@/assets/MTV.jpeg";
+import frpOC from "@/assets/Office-Container.jpg";
 
 const Home = () => {
   const products = [
@@ -31,6 +32,10 @@ const Home = () => {
     {
       image: frpMTV,
       title: "FRP Mobile Toilet Vans",
+    },
+    {
+      image: frpOC,
+      title: "FRP Office Container",
     },
   ];
 

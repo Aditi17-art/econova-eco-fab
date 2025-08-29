@@ -11,6 +11,8 @@ import frpBenchImg from "@/assets/frp-bench.jpg";
 import frpMTV from "@/assets/MTV.jpeg";
 import frpOC from "@/assets/Office-Container.jpg";
 import frpurinal from "@/assets/frp-urinal.jpg";
+import MSToilet from "@/assets/MS Portable Toilet.jpeg";
+import { title } from "process";
 
 const Home = () => {
   const products = [
@@ -36,11 +38,15 @@ const Home = () => {
     },
     {
       image: frpOC,
-      title: "FRP Office Container",
+      title: "Office Container",
     },
     {
       image: frpurinal,
       title: "FRP Urinal Cabin",
+    },
+    {
+      image: MSToilet,
+      title: "MS Portable Toilet",
     },
   ];
 

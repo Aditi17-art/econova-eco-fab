@@ -19,6 +19,7 @@ import frpBenchImg from "@/assets/frp-bench.jpg";
 import frpMTV from "@/assets/MTV.jpeg";
 import frpOC from "@/assets/Office-Container.jpg";
 import frpurinal from "@/assets/frp-urinal.jpg";
+import MSToilet from "@/assets/MS Portable Toilet.jpeg";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -200,19 +201,19 @@ const Products = () => {
     {
       id: 6,
       image: frpOC,
-      title: "FRP Office Container",
+      title: " Office Container",
       category: "Structures",
       description:
-        "Portable FRP office container designed for on-site workspaces and project offices.",
+        "Portable office container designed for on-site workspaces and project offices.",
       shortFeatures: [
         "Portable & Durable",
         "Weather Resistant",
         "Low Maintenance",
       ],
       fullDescription:
-        "Our FRP Office Containers are ideal for creating instant and reliable workspaces at construction sites, industrial    areas, and remote locations. Built with premium FRP panels, these containers offer excellent insulation, durability, and comfort, making them a cost-effective and long-lasting alternative to traditional site offices.",
+        "Our Office Containers are ideal for creating instant and reliable workspaces at construction sites, industrial    areas, and remote locations. Built with premium FRP panels, these containers offer excellent insulation, durability, and comfort, making them a cost-effective and long-lasting alternative to traditional site offices.",
       specifications: [
-        "Material: High-quality FRP panels",
+        "Material: High-quality panels",
         "Structure: Rigid & rust-proof body",
         "Dimensions: Customizable sizes",
         "Flooring: Anti-slip & durable surface",
@@ -253,6 +254,41 @@ const Products = () => {
       useCases: [
         "Public Gatherings",
         "Construction Sites",
+        "Highways & Toll Plazas",
+        "Industrial Areas",
+        "Event Venues",
+      ],
+      customizations: [
+        "Size & layout",
+        "Color options",
+        "Water supply integration",
+        "Branding/Logo printing",
+      ],
+    },
+    {
+      id: 7,
+      image: MSToilet,
+      title: "MS Portable Toilet",
+      category: "Sanitation",
+      description:
+        "Durable MS portable toilet for hygienic public and site use.",
+      shortFeatures: [
+        "Strong MS Body",
+        "Weather Resistant",
+        "Easy to Maintain",
+      ],
+      fullDescription:
+        "Our MS Portable Toilets are built with a sturdy mild steel (MS) structure, making them highly durable and suitable for long-term use at public places, construction sites, and events. These toilets are designed to withstand rough weather conditions, provide proper ventilation, and ensure hygiene with minimal maintenance.",
+      specifications: [
+        "Material: Mild Steel (MS) body",
+        "Structure: Rigid and corrosion-resistant",
+        "Flooring: Anti-slip surface",
+        "Ventilation: Proper airflow design",
+        "Dimensions: Customizable",
+      ],
+      useCases: [
+        "Construction Sites",
+        "Public Places",
         "Highways & Toll Plazas",
         "Industrial Areas",
         "Event Venues",

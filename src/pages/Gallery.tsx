@@ -12,6 +12,7 @@ import manufacturingImg from "@/assets/manufacturing.jpg";
 import frpMTV from "@/assets/MTV.jpeg";
 import frpOC from "@/assets/Office-Container.jpg";
 import frpurinal from "@/assets/frp-urinal.jpg";
+import MSToilet from "@/assets/MS Portable Toilet.jpeg";
 
 import { Description } from "@radix-ui/react-toast";
 
@@ -66,8 +67,8 @@ const Gallery = () => {
       id: 6,
       src: frpOC,
       title: "Office Container",
-      category: "FRP-Office-Container",
-      description: "Durable FRP office container for site use",
+      category: "Office-Container",
+      description: "Durable  office container for site use",
     },
     {
       id: 6,
@@ -75,6 +76,13 @@ const Gallery = () => {
       title: "Urinal Cabin",
       category: "FRP-Urinal-Cabin",
       description: "Durable FRP urinal cabin for public and site use",
+    },
+    {
+      id: 6,
+      src: MSToilet,
+      title: "MS Portable Toilet",
+      category: "MS Portable Toilet",
+      description: "Durable MS portable toilet for public and site use",
     },
   ];
 

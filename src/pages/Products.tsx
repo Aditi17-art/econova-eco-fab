@@ -21,6 +21,7 @@ import frpOC from "@/assets/Office-Container.jpg";
 import frpurinal from "@/assets/frp-urinal.jpg";
 import MSToilet from "@/assets/MS Portable Toilet.jpeg";
 import IS from "@/assets/Industrial Shed.jpeg";
+import rikshaw from "@/assets/garbage-rikshaw.jpg";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -334,6 +335,41 @@ const Products = () => {
         "Roofing material options",
         "Color options",
         "Insulation & ventilation system",
+        "Branding/Logo printing",
+      ],
+    },
+    {
+      id: 10,
+      image: rikshaw,
+      title: "Garbage Rikshaw",
+      category: "FRP-Garbage Rikshaw",
+      description:
+        "Durable FRP garbage rickshaw for efficient waste collection and disposal.",
+      shortFeatures: [
+        "Lightweight & Portable",
+        "Easy to Handle",
+        "Eco-Friendly Design",
+      ],
+      fullDescription:
+        "Our FRP Garbage Rikshaws are designed to provide an efficient and eco-friendly solution for waste collection and disposal. Built with high-quality FRP material, these rickshaws are lightweight, durable, and resistant to corrosion, making them ideal for long-term use in urban and rural areas. They are easy to operate, low maintenance, and ensure hygienic waste management.",
+      specifications: [
+        "Material: Premium FRP body",
+        "Structure: Lightweight yet strong",
+        "Capacity: Customizable waste storage",
+        "Wheels: Heavy-duty for smooth mobility",
+        "Dimensions: Customizable",
+      ],
+      useCases: [
+        "Municipal Waste Collection",
+        "Society & Colony Cleaning",
+        "Industrial Waste Handling",
+        "Event Waste Management",
+        "Marketplaces & Public Areas",
+      ],
+      customizations: [
+        "Size & capacity",
+        "Color options",
+        "Partitioned compartments",
         "Branding/Logo printing",
       ],
     },

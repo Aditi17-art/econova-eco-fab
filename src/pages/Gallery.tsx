@@ -14,6 +14,7 @@ import frpOC from "@/assets/Office-Container.jpg";
 import frpurinal from "@/assets/frp-urinal.jpg";
 import MSToilet from "@/assets/MS Portable Toilet.jpeg";
 import IS from "@/assets/Industrial Shed.jpeg";
+import rikshaw from "@/assets/garbage-rikshaw.jpg";
 
 import { Description } from "@radix-ui/react-toast";
 
@@ -92,6 +93,14 @@ const Gallery = () => {
       category: "Industrial Shed",
       description:
         "Strong and durable industrial shed for warehouses, factories, and workshops",
+    },
+    {
+      id: 11,
+      src: rikshaw,
+      title: "Garbage Rikshaw",
+      category: "FRP-Garbage Rikshaw",
+      description:
+        "Durable FRP garbage rickshaw for waste collection and easy disposal",
     },
   ];
 

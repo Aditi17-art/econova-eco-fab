@@ -13,6 +13,7 @@ import frpOC from "@/assets/Office-Container.jpg";
 import frpurinal from "@/assets/frp-urinal.jpg";
 import MSToilet from "@/assets/MS Portable Toilet.jpeg";
 import IS from "@/assets/Industrial Shed.jpeg";
+import rikshaw from "@/assets/garbage-rikshaw.jpg";
 
 import { title } from "process";
 
@@ -53,6 +54,10 @@ const Home = () => {
     {
       image: IS,
       title: "Industrial Shed",
+    },
+    {
+      image: rikshaw,
+      title: "Garbage Rikshaw",
     },
   ];
 

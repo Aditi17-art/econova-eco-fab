@@ -10,6 +10,7 @@ import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
 import frpMTV from "@/assets/MTV.jpeg";
 import frpOC from "@/assets/Office-Container.jpg";
+import frpurinal from "@/assets/frp-urinal.jpg";
 
 const Home = () => {
   const products = [
@@ -36,6 +37,10 @@ const Home = () => {
     {
       image: frpOC,
       title: "FRP Office Container",
+    },
+    {
+      image: frpurinal,
+      title: "FRP Urinal Cabin",
     },
   ];
 

@@ -18,6 +18,7 @@ import storageTankImg from "@/assets/bio-digester-tank.jpg";
 import frpBenchImg from "@/assets/frp-bench.jpg";
 import frpMTV from "@/assets/MTV.jpeg";
 import frpOC from "@/assets/Office-Container.jpg";
+import frpurinal from "@/assets/frp-urinal.jpg";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -200,7 +201,7 @@ const Products = () => {
       id: 6,
       image: frpOC,
       title: "FRP Office Container",
-      category: "Workplace Solutions",
+      category: "Structures",
       description:
         "Portable FRP office container designed for on-site workspaces and project offices.",
       shortFeatures: [
@@ -230,6 +231,37 @@ const Products = () => {
         "Electrical fittings",
         "Air conditioning & ventilation",
         "Exterior color & branding",
+      ],
+    },
+    {
+      id: 6,
+      image: frpurinal,
+      title: "FRP Urinal Cabin",
+      category: "Sanitation",
+      description:
+        "Portable FRP urinal cabin designed for hygienic public and site use.",
+      shortFeatures: ["Compact & Portable", "Hygienic Design", "Easy to Clean"],
+      fullDescription:
+        "Our FRP Urinal Cabins are a convenient and durable sanitation solution for public places, events, and construction sites. Built with high-quality FRP material, these cabins are lightweight, weather-resistant, and ensure proper hygiene with minimal maintenance requirements.",
+      specifications: [
+        "Material: Premium FRP body",
+        "Design: Compact and space-efficient",
+        "Flooring: Anti-slip surface",
+        "Water System: Optional flushing mechanism",
+        "Dimensions: Customizable",
+      ],
+      useCases: [
+        "Public Gatherings",
+        "Construction Sites",
+        "Highways & Toll Plazas",
+        "Industrial Areas",
+        "Event Venues",
+      ],
+      customizations: [
+        "Size & layout",
+        "Color options",
+        "Water supply integration",
+        "Branding/Logo printing",
       ],
     },
   ];

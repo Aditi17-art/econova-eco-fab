@@ -11,6 +11,8 @@ import frpBenchImg from "@/assets/frp-bench.jpg";
 import manufacturingImg from "@/assets/manufacturing.jpg";
 import frpMTV from "@/assets/MTV.jpeg";
 import frpOC from "@/assets/Office-Container.jpg";
+import frpurinal from "@/assets/frp-urinal.jpg";
+
 import { Description } from "@radix-ui/react-toast";
 
 const Gallery = () => {
@@ -66,6 +68,13 @@ const Gallery = () => {
       title: "Office Container",
       category: "FRP-Office-Container",
       description: "Durable FRP office container for site use",
+    },
+    {
+      id: 6,
+      src: frpurinal,
+      title: "Urinal Cabin",
+      category: "FRP-Urinal-Cabin",
+      description: "Durable FRP urinal cabin for public and site use",
     },
   ];
 

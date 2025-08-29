@@ -20,6 +20,7 @@ import frpMTV from "@/assets/MTV.jpeg";
 import frpOC from "@/assets/Office-Container.jpg";
 import frpurinal from "@/assets/frp-urinal.jpg";
 import MSToilet from "@/assets/MS Portable Toilet.jpeg";
+import IS from "@/assets/Industrial Shed.jpeg";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -235,7 +236,7 @@ const Products = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       image: frpurinal,
       title: "FRP Urinal Cabin",
       category: "Sanitation",
@@ -266,7 +267,7 @@ const Products = () => {
       ],
     },
     {
-      id: 7,
+      id: 8,
       image: MSToilet,
       title: "MS Portable Toilet",
       category: "Sanitation",
@@ -297,6 +298,42 @@ const Products = () => {
         "Size & layout",
         "Color options",
         "Water supply integration",
+        "Branding/Logo printing",
+      ],
+    },
+    {
+      id: 9,
+      image: IS,
+      title: "Industrial Shed",
+      category: "Industrial Shed",
+      description:
+        "Strong and durable industrial shed for factories, warehouses, and workshops.",
+      shortFeatures: [
+        "Robust MS Structure",
+        "Weather Resistant",
+        "Customizable Design",
+      ],
+      fullDescription:
+        "Our Industrial Sheds are designed with a strong mild steel (MS) framework to provide long-lasting protection and reliable space solutions for industries. These sheds are ideal for factories, warehouses, storage facilities, and workshops. Built with high-quality materials, they ensure durability, resistance to harsh weather, and cost-effective construction with minimal maintenance requirements.",
+      specifications: [
+        "Material: High-quality Mild Steel (MS)",
+        "Structure: Heavy-duty & corrosion-resistant",
+        "Roofing: Galvanized/Color-coated sheets",
+        "Ventilation: Proper airflow design",
+        "Dimensions: Customizable",
+      ],
+      useCases: [
+        "Factories & Manufacturing Units",
+        "Warehouses & Storage",
+        "Workshops",
+        "Agricultural Sheds",
+        "Industrial Facilities",
+      ],
+      customizations: [
+        "Size & layout",
+        "Roofing material options",
+        "Color options",
+        "Insulation & ventilation system",
         "Branding/Logo printing",
       ],
     },

@@ -12,6 +12,8 @@ import frpMTV from "@/assets/MTV.jpeg";
 import frpOC from "@/assets/Office-Container.jpg";
 import frpurinal from "@/assets/frp-urinal.jpg";
 import MSToilet from "@/assets/MS Portable Toilet.jpeg";
+import IS from "@/assets/Industrial Shed.jpeg";
+
 import { title } from "process";
 
 const Home = () => {
@@ -47,6 +49,10 @@ const Home = () => {
     {
       image: MSToilet,
       title: "MS Portable Toilet",
+    },
+    {
+      image: IS,
+      title: "Industrial Shed",
     },
   ];
 

@@ -13,6 +13,7 @@ import frpMTV from "@/assets/MTV.jpeg";
 import frpOC from "@/assets/Office-Container.jpg";
 import frpurinal from "@/assets/frp-urinal.jpg";
 import MSToilet from "@/assets/MS Portable Toilet.jpeg";
+import IS from "@/assets/Industrial Shed.jpeg";
 
 import { Description } from "@radix-ui/react-toast";
 
@@ -64,25 +65,33 @@ const Gallery = () => {
       description: "Modern bio toilet installed at construction site",
     },
     {
-      id: 6,
+      id: 7,
       src: frpOC,
       title: "Office Container",
       category: "Office-Container",
       description: "Durable  office container for site use",
     },
     {
-      id: 6,
+      id: 8,
       src: frpurinal,
       title: "Urinal Cabin",
       category: "FRP-Urinal-Cabin",
       description: "Durable FRP urinal cabin for public and site use",
     },
     {
-      id: 6,
+      id: 9,
       src: MSToilet,
       title: "MS Portable Toilet",
       category: "MS Portable Toilet",
       description: "Durable MS portable toilet for public and site use",
+    },
+    {
+      id: 10,
+      src: IS,
+      title: "Industrial Shed",
+      category: "Industrial Shed",
+      description:
+        "Strong and durable industrial shed for warehouses, factories, and workshops",
     },
   ];
 

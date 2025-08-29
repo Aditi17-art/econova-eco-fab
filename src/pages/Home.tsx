@@ -163,7 +163,16 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {products.map((product, index) => (
-              <ProductCard key={index} {...product} onViewMore={() => {}} />
+              <ProductCard
+                key={index}
+                {...product}
+                onViewMore={() => {
+                  // navigate to product details page
+                  window.location.href = `/products/${encodeURIComponent(
+                    product.title.toLowerCase().replace(/\s+/g, "-")
+                  )}`;
+                }}
+              />
             ))}
           </div>
 

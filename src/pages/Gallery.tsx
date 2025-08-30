@@ -15,6 +15,8 @@ import frpurinal from "@/assets/frp-urinal.jpg";
 import MSToilet from "@/assets/MS Portable Toilet.jpeg";
 import IS from "@/assets/Industrial Shed.jpeg";
 import rikshaw from "@/assets/garbage-rikshaw.jpg";
+import classroom from "@/assets/cr.jpeg";
+import pph from "@/assets/pph.jpeg";
 
 import { Description } from "@radix-ui/react-toast";
 
@@ -101,6 +103,22 @@ const Gallery = () => {
       category: "FRP-Garbage Rikshaw",
       description:
         "Durable FRP garbage rickshaw for waste collection and easy disposal",
+    },
+    {
+      id: 12,
+      src: classroom,
+      title: "Prefabricated Classroom",
+      category: "Prefabricated Classroom",
+      description:
+        "Strong and portable prefabricated classroom ideal for schools and institutes.",
+    },
+    {
+      id: 13,
+      src: pph,
+      title: "Puff Panel House",
+      category: "Prefabricated House",
+      description:
+        "Durable and insulated Puff Panel House designed for modern and affordable living.",
     },
   ];
 

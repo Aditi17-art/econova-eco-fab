@@ -14,6 +14,8 @@ import frpurinal from "@/assets/frp-urinal.jpg";
 import MSToilet from "@/assets/MS Portable Toilet.jpeg";
 import IS from "@/assets/Industrial Shed.jpeg";
 import rikshaw from "@/assets/garbage-rikshaw.jpg";
+import classroom from "@/assets/cr.jpeg";
+import pph from "@/assets/pph.jpeg";
 
 import { title } from "process";
 
@@ -58,6 +60,14 @@ const Home = () => {
     {
       image: rikshaw,
       title: "Garbage Rikshaw",
+    },
+    {
+      image: classroom,
+      title: "Prefabricated Classroom ",
+    },
+    {
+      image: pph,
+      title: "Puff Panel House ",
     },
   ];
 

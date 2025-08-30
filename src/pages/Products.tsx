@@ -22,6 +22,8 @@ import frpurinal from "@/assets/frp-urinal.jpg";
 import MSToilet from "@/assets/MS Portable Toilet.jpeg";
 import IS from "@/assets/Industrial Shed.jpeg";
 import rikshaw from "@/assets/garbage-rikshaw.jpg";
+import classroom from "@/assets/cr.jpeg";
+import pph from "@/assets/pph.jpeg";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -371,6 +373,79 @@ const Products = () => {
         "Color options",
         "Partitioned compartments",
         "Branding/Logo printing",
+      ],
+    },
+    {
+      id: 11,
+      image: classroom,
+      title: "Prefabricated Classroom",
+      category: "Prefabricated Structures",
+      description:
+        "Durable and portable prefabricated classroom for schools and institutes.",
+      shortFeatures: [
+        "Quick Installation",
+        "Durable & Weather-Resistant",
+        "Cost-Effective Solution",
+      ],
+      fullDescription:
+        "Our Prefabricated Classrooms are designed to provide safe, durable, and comfortable learning spaces. Built with premium FRP and prefabricated panels, these classrooms are strong, weather-resistant, and easy to install. They are ideal for schools, colleges, and training institutes, ensuring a modern and efficient learning environment while being cost-effective and low-maintenance.",
+      specifications: [
+        "Material: High-quality FRP & prefabricated panels",
+        "Structure: Strong, lightweight, and durable",
+        "Size: Customizable as per requirement",
+        "Insulation: Thermal & sound insulation available",
+        "Windows & Doors: Fitted with FRP/Aluminium options",
+      ],
+      useCases: [
+        "Schools & Educational Institutes",
+        "Training & Coaching Centers",
+        "Temporary Learning Facilities",
+        "Rural & Remote Education Projects",
+        "NGO & Government Educational Programs",
+      ],
+      customizations: [
+        "Size & layout",
+        "Interior finishing",
+        "Furniture & fixtures",
+        "Color & design",
+        "Electrical & HVAC fittings",
+      ],
+    },
+
+    {
+      id: 12,
+      image: pph,
+      title: "Puff Panel House",
+      category: "Prefabricated House",
+      description:
+        "Energy-efficient and durable Puff Panel House for modern and affordable living.",
+      shortFeatures: [
+        "Quick Installation",
+        "Thermal & Acoustic Insulation",
+        "Durable & Weather-Resistant",
+      ],
+      fullDescription:
+        "Our Puff Panel Houses are designed to provide a modern, affordable, and sustainable living solution. Constructed with high-quality insulated sandwich panels (PUF panels), these houses offer excellent thermal insulation, weather resistance, and durability. They are easy to install, low-maintenance, and can be customized to suit residential, commercial, or temporary housing needs. Ideal for eco-friendly living, construction sites, resorts, and rural housing projects.",
+      specifications: [
+        "Material: PUF Insulated Panels",
+        "Structure: Lightweight yet sturdy",
+        "Insulation: Superior thermal & acoustic insulation",
+        "Roofing: Leak-proof & weather resistant",
+        "Dimensions: Fully customizable",
+      ],
+      useCases: [
+        "Residential Housing",
+        "Farmhouses & Villas",
+        "Resorts & Guest Houses",
+        "Temporary Site Accommodation",
+        "Offices & Portable Cabins",
+      ],
+      customizations: [
+        "Size & Layout",
+        "Interior & Exterior Finishes",
+        "Doors & Windows Options",
+        "Color & Branding",
+        "Furniture & Fixtures Integration",
       ],
     },
   ];

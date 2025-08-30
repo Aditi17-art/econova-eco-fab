@@ -17,6 +17,7 @@ import IS from "@/assets/Industrial Shed.jpeg";
 import rikshaw from "@/assets/garbage-rikshaw.jpg";
 import classroom from "@/assets/cr.jpeg";
 import pph from "@/assets/pph.jpeg";
+import pc from "@/assets/pc.jpeg";
 
 import { Description } from "@radix-ui/react-toast";
 
@@ -119,6 +120,13 @@ const Gallery = () => {
       category: "Prefabricated House",
       description:
         "Durable and insulated Puff Panel House designed for modern and affordable living.",
+    },
+    {
+      id: 14,
+      src: pc,
+      title: "Prefabricated Cabin",
+      category: "Prefabricated Cabin",
+      description: "Strong and portable prefabricated cabin for versatile use.",
     },
   ];
 

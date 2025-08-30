@@ -16,6 +16,7 @@ import IS from "@/assets/Industrial Shed.jpeg";
 import rikshaw from "@/assets/garbage-rikshaw.jpg";
 import classroom from "@/assets/cr.jpeg";
 import pph from "@/assets/pph.jpeg";
+import pc from "@/assets/pc.jpeg";
 
 import { title } from "process";
 
@@ -68,6 +69,10 @@ const Home = () => {
     {
       image: pph,
       title: "Puff Panel House ",
+    },
+    {
+      image: pc,
+      title: "Prefabricated Cabin",
     },
   ];
 

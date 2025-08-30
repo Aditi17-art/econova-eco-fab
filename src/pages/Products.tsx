@@ -24,6 +24,7 @@ import IS from "@/assets/Industrial Shed.jpeg";
 import rikshaw from "@/assets/garbage-rikshaw.jpg";
 import classroom from "@/assets/cr.jpeg";
 import pph from "@/assets/pph.jpeg";
+import pc from "@/assets/pc.jpeg";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -68,7 +69,7 @@ const Products = () => {
     {
       id: 2,
       image: frpCabinImg,
-      title: "FRP Cabins",
+      title: "MS Security Guard Cabin",
       category: "Structures",
       description:
         "Durable prefabricated structures suitable for office spaces, residential units, and specialized applications.",
@@ -78,7 +79,7 @@ const Products = () => {
         "Customizable Design",
       ],
       fullDescription:
-        "Our FRP Cabins are engineered for durability and versatility, offering quick deployment solutions for temporary or permanent structures. Built with high-quality FRP materials, these cabins provide excellent insulation and weather resistance.",
+        "Our MS Security Guard Cabin are engineered for durability and versatility, offering quick deployment solutions for temporary or permanent structures. Built with high-quality MS materials, these cabins provide excellent insulation and weather resistance.",
       specifications: [
         "Size: 8x8 ft to 20x40 ft",
         "Height: 8-12 ft",
@@ -444,6 +445,42 @@ const Products = () => {
         "Size & Layout",
         "Interior & Exterior Finishes",
         "Doors & Windows Options",
+        "Color & Branding",
+        "Furniture & Fixtures Integration",
+      ],
+    },
+    {
+      id: 13,
+      image: pc,
+      title: "Prefabricated Cabin",
+      category: "Structures",
+      description:
+        "Portable and durable prefabricated cabin for offices, housing, and site needs.",
+      shortFeatures: [
+        "Quick Installation",
+        "Weather-Resistant",
+        "Customizable Design",
+      ],
+      fullDescription:
+        "Our Prefabricated Cabins are designed to provide a versatile, durable, and cost-effective solution for various space requirements. Built with premium prefabricated materials, these cabins are weather-resistant, low-maintenance, and easy to install. They can be customized for office use, housing, site accommodations, or security cabins. Offering both comfort and durability, these cabins are ideal for quick deployment in urban and remote areas.",
+      specifications: [
+        "Material: High-quality prefabricated panels",
+        "Structure: Sturdy and long-lasting",
+        "Insulation: Thermal and acoustic options available",
+        "Doors & Windows: Durable and ventilated",
+        "Dimensions: Fully customizable",
+      ],
+      useCases: [
+        "Site Offices",
+        "Security Cabins",
+        "Temporary Housing",
+        "Resorts & Farmhouses",
+        "Commercial Booths & Kiosks",
+      ],
+      customizations: [
+        "Size & Layout",
+        "Interior & Exterior Finishes",
+        "Seating & Partition Options",
         "Color & Branding",
         "Furniture & Fixtures Integration",
       ],

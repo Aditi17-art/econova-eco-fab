@@ -169,17 +169,17 @@ const Products = () => {
     {
       id: 5,
       image: frpMTV,
-      title: "FRP Mobile Toilet Vans",
+      title: "Mobile Toilet Vans",
       category: "Sanitation",
       description:
-        "Fully equipped FRP Mobile Toilet Vans designed for large gatherings, events, and on-the-go sanitation needs.",
+        "Fully equipped Mobile Toilet Vans designed for large gatherings, events, and on-the-go sanitation needs.",
       shortFeatures: [
         "Portable & Mobile",
         "Multiple Cabins",
         "Hygienic & Durable",
       ],
       fullDescription:
-        "Our FRP Mobile Toilet Vans are the ultimate solution for mobile sanitation. Built on sturdy FRP structures, they feature multiple cabins with advanced waste management systems, ensuring hygiene and convenience at outdoor events, highways, and temporary sites.",
+        "Our Mobile Toilet Vans are the ultimate solution for mobile sanitation. Built on sturdy FRP structures, they feature multiple cabins with advanced waste management systems, ensuring hygiene and convenience at outdoor events, highways, and temporary sites.",
       specifications: [
         "Cabins: 2-8 units",
         "Material: Premium FRP body",
@@ -241,13 +241,13 @@ const Products = () => {
     {
       id: 7,
       image: frpurinal,
-      title: "FRP Urinal Cabin",
+      title: "Urinal Cabin",
       category: "Sanitation",
       description:
-        "Portable FRP urinal cabin designed for hygienic public and site use.",
+        "Portable urinal cabin designed for hygienic public and site use.",
       shortFeatures: ["Compact & Portable", "Hygienic Design", "Easy to Clean"],
       fullDescription:
-        "Our FRP Urinal Cabins are a convenient and durable sanitation solution for public places, events, and construction sites. Built with high-quality FRP material, these cabins are lightweight, weather-resistant, and ensure proper hygiene with minimal maintenance requirements.",
+        "Our Urinal Cabins are a convenient and durable sanitation solution for public places, events, and construction sites. Built with high-quality FRP material, these cabins are lightweight, weather-resistant, and ensure proper hygiene with minimal maintenance requirements.",
       specifications: [
         "Material: Premium FRP body",
         "Design: Compact and space-efficient",
@@ -308,7 +308,7 @@ const Products = () => {
       id: 9,
       image: IS,
       title: "Industrial Shed",
-      category: "Industrial Shed",
+      category: "Structures",
       description:
         "Strong and durable industrial shed for factories, warehouses, and workshops.",
       shortFeatures: [
@@ -344,7 +344,7 @@ const Products = () => {
       id: 10,
       image: rikshaw,
       title: "Garbage Rikshaw",
-      category: "FRP-Garbage Rikshaw",
+      category: "Sanitation",
       description:
         "Durable FRP garbage rickshaw for efficient waste collection and disposal.",
       shortFeatures: [
@@ -379,7 +379,7 @@ const Products = () => {
       id: 11,
       image: classroom,
       title: "Prefabricated Classroom",
-      category: "Prefabricated Structures",
+      category: "Structures",
       description:
         "Durable and portable prefabricated classroom for schools and institutes.",
       shortFeatures: [
@@ -416,7 +416,7 @@ const Products = () => {
       id: 12,
       image: pph,
       title: "Puff Panel House",
-      category: "Prefabricated House",
+      category: "Structures",
       description:
         "Energy-efficient and durable Puff Panel House for modern and affordable living.",
       shortFeatures: [

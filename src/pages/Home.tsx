@@ -27,7 +27,7 @@ const Home = () => {
     },
     {
       image: frpCabinImg,
-      title: "FRP Cabins",
+      title: "MS Security Guard Cabin",
     },
     {
       image: storageTankImg,
@@ -39,7 +39,7 @@ const Home = () => {
     },
     {
       image: frpMTV,
-      title: "FRP Mobile Toilet Vans",
+      title: "Mobile Toilet Vans",
     },
     {
       image: frpOC,
@@ -47,7 +47,7 @@ const Home = () => {
     },
     {
       image: frpurinal,
-      title: "FRP Urinal Cabin",
+      title: "Urinal Cabin",
     },
     {
       image: MSToilet,

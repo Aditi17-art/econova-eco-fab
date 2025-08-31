@@ -1,22 +1,8 @@
-import { useState } from "react";
 import Hero from "@/components/Hero";
 import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import {
-  ArrowRight,
-  Award,
-  Users,
-  Wrench,
-  Leaf,
-  CheckCircle,
-} from "lucide-react";
+import { ArrowRight, Award, Users, Wrench, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
 import bioToiletImg from "@/assets/bio-toilet1.jpg";
 import frpCabinImg from "@/assets/frp-cabin.jpg";
@@ -32,9 +18,9 @@ import classroom from "@/assets/cr.jpeg";
 import pph from "@/assets/pph.jpeg";
 import pc from "@/assets/pc.jpeg";
 
-const Home = () => {
-  const [selectedProduct, setSelectedProduct] = useState(null);
+import { title } from "process";
 
+const Home = () => {
   const products = [
     {
       image: bioToiletImg,
@@ -89,6 +75,7 @@ const Home = () => {
       title: "Prefabricated Cabin",
     },
   ];
+
   const features = [
     {
       icon: <Award className="w-8 h-8 text-brand-green" />,
@@ -151,7 +138,9 @@ const Home = () => {
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               With years of expertise in FRP manufacturing, Econova Engineering
               has established itself as a trusted partner for portable
-              infrastructure solutions across India.
+              infrastructure solutions across India. Based in Greater Noida, we
+              combine advanced technology with sustainable practices to deliver
+              products that last.
             </p>
           </div>
 
@@ -188,12 +177,8 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {products.map((product) => (
-              <ProductCard
-                key={product.id}
-                {...product}
-                onLearnMore={() => setSelectedProduct(product)}
-              />
+            {products.map((product, index) => (
+              <ProductCard key={index} {...product} onViewMore={() => {}} />
             ))}
           </div>
 
@@ -207,54 +192,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Product Detail Modal */}
-      <Dialog
-        open={!!selectedProduct}
-        onOpenChange={() => setSelectedProduct(null)}>
-        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
-          {selectedProduct && (
-            <>
-              <DialogHeader>
-                <DialogTitle className="text-2xl font-bold text-brand-grey-dark">
-                  {selectedProduct.title}
-                </DialogTitle>
-              </DialogHeader>
-
-              <div className="space-y-6">
-                <img
-                  src={selectedProduct.image}
-                  alt={selectedProduct.title}
-                  className="w-full h-64 object-cover rounded-lg"
-                />
-                <p className="text-muted-foreground leading-relaxed">
-                  {selectedProduct.fullDescription ||
-                    "No description available."}
-                </p>
-
-                {selectedProduct.specifications &&
-                  selectedProduct.specifications.length > 0 && (
-                    <div>
-                      <h3 className="text-xl font-semibold text-brand-grey-dark mb-4">
-                        Specifications
-                      </h3>
-                      <ul className="space-y-2">
-                        {selectedProduct.specifications.map((spec, index) => (
-                          <li
-                            key={index}
-                            className="text-sm text-muted-foreground flex items-center">
-                            <CheckCircle className="w-4 h-4 text-brand-green mr-2" />
-                            {spec}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-              </div>
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
 
       {/* Testimonials Section */}
       <section className="py-20 bg-brand-green-light/20">

@@ -80,7 +80,7 @@ const Contact = () => {
       icon: <MapPin className="w-6 h-6 text-brand-green" />,
       title: "Address",
       details: [
-        "J-33,UPSIDC Industrial Area, Site-V, Kasna, Greater Noida, UP 201310",
+        "BH-025, Boraki Extension, Greater Noida, Gautam budh nagar, UP 203207",
       ],
     },
     {

@@ -32,8 +32,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_smgod15", // replace with your service ID
-        "template_0s2uyme", // replace with your template ID
+        "service_5h6yclr", // replace with your service ID
+        "template_9ul1qw7", // replace with your template ID
         {
           to_name: "Econova Engineering",
           from_name: formData.name,
@@ -43,7 +43,7 @@ const Contact = () => {
           productInterest: formData.productInterest || "not filled",
           message: formData.message.trim() || "not filled",
         },
-        "vRLhJ7upGVMvNW1TW" // replace with your public key
+        "DcaNgVae7doW-ihf3" // replace with your public key
       );
 
       toast({

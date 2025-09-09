@@ -43,7 +43,7 @@ const Contact = () => {
           productInterest: formData.productInterest || "not filled",
           message: formData.message.trim() || "not filled",
         },
-        "DcaNgVae7doW-ihf3" // replace with your public key
+        "PkX8u4zWw8N9djP65" // replace with your public key
       );
 
       toast({

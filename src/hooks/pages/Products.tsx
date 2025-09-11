@@ -34,7 +34,7 @@ const Products = () => {
       id: 1,
       image: bioToiletImg,
       title: "Bio Toilets",
-      category: "Sanitation",
+      category: "Bio-Toilets",
       description:
         "Advanced eco-friendly portable sanitation solutions designed for various environments and applications.",
       shortFeatures: [
@@ -171,7 +171,7 @@ const Products = () => {
       id: 5,
       image: frpMTV,
       title: "Mobile Toilet Vans",
-      category: "Sanitation",
+      category: "Bio-Toilets",
       description:
         "Fully equipped Mobile Toilet Vans designed for large gatherings, events, and on-the-go sanitation needs.",
       shortFeatures: [
@@ -243,12 +243,12 @@ const Products = () => {
       id: 7,
       image: frpurinal,
       title: "Urinal Cabin",
-      category: "Sanitation",
+      category: "Bio-Toilets",
       description:
         "Portable urinal cabin designed for hygienic public and site use.",
       shortFeatures: ["Compact & Portable", "Hygienic Design", "Easy to Clean"],
       fullDescription:
-        "Our Urinal Cabins are a convenient and durable sanitation solution for public places, events, and construction sites. Built with high-quality FRP material, these cabins are lightweight, weather-resistant, and ensure proper hygiene with minimal maintenance requirements.",
+        "Our Urinal Cabins are a convenient and durable tation solution for public places, events, and construction sites. Built with high-quality FRP material, these cabins are lightweight, weather-resistant, and ensure proper hygiene with minimal maintenance requirements.",
       specifications: [
         "Material: Premium FRP body",
         "Design: Compact and space-efficient",
@@ -274,7 +274,7 @@ const Products = () => {
       id: 8,
       image: MSToilet,
       title: "MS Portable Toilet",
-      category: "Sanitation",
+      category: "Bio-Toilets",
       description:
         "Durable MS portable toilet for hygienic public and site use.",
       shortFeatures: [
@@ -345,7 +345,7 @@ const Products = () => {
       id: 10,
       image: rikshaw,
       title: "Garbage Rikshaw",
-      category: "Sanitation",
+      category: "Bio-Toilets",
       description:
         "Durable FRP garbage rickshaw for efficient waste collection and disposal.",
       shortFeatures: [
@@ -489,7 +489,7 @@ const Products = () => {
 
   const categories = [
     "All",
-    "Sanitation",
+    "Bio-Toilets",
     "Structures",
     "Storage",
     "Furniture",

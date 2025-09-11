@@ -78,7 +78,7 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <MapPin className="w-6 h-6 text-brand-green" />,
-      title: "Address",
+      title: "Factory Address",
       details: [
         "BH-025, Boraki Extension, Greater Noida, Gautam budh nagar, UP 203207",
       ],

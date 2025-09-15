@@ -45,11 +45,11 @@ const About = () => {
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"></div>
       </section>
-      <section className="relative w-full h-[800px]">
+      <section className="relative w-full ">
         <img
           src={about}
           alt="About Econova Engineering"
-          className="w-full h-full object-cover"
+          className="w-full h-auto object-contain"
         />
       </section>
 

@@ -18,6 +18,7 @@ import rikshaw from "@/assets/garbage-rikshaw.jpg";
 import classroom from "@/assets/cr.jpeg";
 import pph from "@/assets/pph.jpeg";
 import pc from "@/assets/pc.jpeg";
+import about from "@/assets/Eco-about .png";
 
 import { Description } from "@radix-ui/react-toast";
 
@@ -127,6 +128,13 @@ const Gallery = () => {
       title: "Prefabricated Cabin",
       category: "Prefabricated Cabin",
       description: "Strong and portable prefabricated cabin for versatile use.",
+    },
+    {
+      id: 15,
+      src: about,
+      title: "eco-about",
+      category: "image",
+      description: "using canva",
     },
   ];
 

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Target, Eye, Award, Users, Factory, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
 import manufacturingImg from "@/assets/manufacturing.jpg";
-
+import about from "@/assets/Eco-about .png";
 const About = () => {
   const values = [
     {
@@ -40,20 +40,17 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen pt-0">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-brand-green to-brand-green-dark text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              About Econova Engineering
-            </h1>
-            <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto leading-relaxed">
-              Pioneering sustainable infrastructure solutions through innovative
-              FRP technology and uncompromising quality standards.
-            </p>
-          </div>
-        </div>
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"></div>
+      </section>
+      <section className="relative w-full h-[800px]">
+        <img
+          src={about}
+          alt="About Econova Engineering"
+          className="w-full h-full object-cover"
+        />
       </section>
 
       {/* Company Story */}
